@@ -1,18 +1,19 @@
 #include "Maths.h"
 #include <math.h>
 
+
+#define PI 3.14f
+#define HalfCircle 180
 float MathUtils::toRad(float Deg)
 {
-    Deg = 20;
-
-    float radian = Deg * 3.14f / 180;
+    float radian = Deg * PI / HalfCircle;
 
     return radian;
 }
 
 float MathUtils::toDeg(float Rad)
 {
-    float degrees = Rad * 180 / 3.14f;
+    float degrees = Rad * HalfCircle / PI;
     
     return degrees;
 }
@@ -27,25 +28,26 @@ float MathUtils::Pythagoras(float A, float B)
 
 float MathUtils::FindSinTheta(float A, float B)
 {
-    float SOH = sin(A / B);
-    
+    float Theata = A / B;
+    float SOH = asinf(Theata);
+    float t = toDeg(SOH);
     return SOH;
 }
 
 float MathUtils::FindCosTheta(float A, float B)
 {
-
-    float CAH = cos(A / B);
-    
+    float Theata = A / B;
+    float CAH = acosf(Theata);
+    float t = toDeg(CAH);
     return CAH;
 }
 
 float MathUtils::FindTanTheta(float A, float B)
 {
-    
-    float TOA = tan(A / B);
-    
-    return TOA;
+    float Theata = A / B;
+    float TOA = atanf(Theata);
+    float t = toDeg(TOA);
+    return t;
 }
 
 float MathUtils::FindHyp(float Angle, float B)
@@ -59,7 +61,7 @@ float MathUtils::FindOpp(float Angle, float B)
 {
     float opp = B * sin(Angle);
     
-    return ;
+    return opp;
 }
 
 float MathUtils::FindAdj(float Angle, float B)

@@ -1,25 +1,8 @@
-﻿  Algorithms.cpp
-  DataStructures.cpp
-  Maths and Algorithms.cpp
-  Maths.cpp
-  Matrix.cpp
-  Vector.cpp
-  Generating Code...
-C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(4,18): error C2365: 'MathUtils::toRad': redefinition; previous definition was 'function'
-  C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.h(5,15):
-  see declaration of 'MathUtils::toRad'
-  
-C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(5,1): error C2143: syntax error: missing ';' before '{'
-C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(6,18): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(8,5): error C2059: syntax error: 'return'
-C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(9,1): error C2059: syntax error: '}'
-C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(9,1): error C2143: syntax error: missing ';' before '}'
-C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(12,1): error C2143: syntax error: missing ';' before '{'
-C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(12,1): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(21,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(28,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(36,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(44,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(51,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(58,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(65,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+﻿  Maths.cpp
+C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(24,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(40,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(47,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(54,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(61,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(68,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Maths and Algorithms.vcxproj -> C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\x64\Debug\Maths and Algorithms.exe

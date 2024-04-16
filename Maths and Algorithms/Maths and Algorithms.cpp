@@ -13,6 +13,8 @@
 int main()
 {
     std::cout << "Hello World!\n";
+
+    std::cout << MathUtils::FindSinTheta(8, 10);
     //vector
     //add
     //subtract

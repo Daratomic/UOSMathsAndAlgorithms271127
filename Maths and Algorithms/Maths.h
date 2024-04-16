@@ -2,18 +2,18 @@
 namespace MathUtils
 {
 
-	static float toRad(float Deg);
-	static float toDeg(float Rad);
+	float toRad(float Deg);
+	float toDeg(float Rad);
 
-	static float Pythagoras(float A, float B);
+	float Pythagoras(float A, float B);
 
-	static float FindSinTheta(float A, float B);
-	static float FindCosTheta(float A, float B);
-	static float FindTanTheta(float A, float B);
+	float FindSinTheta(float A, float B);
+	float FindCosTheta(float A, float B);
+	float FindTanTheta(float A, float B);
 
-	static float FindHyp(float Angle, float B);
-	static float FindOpp(float Angle, float B);
-	static float FindAdj(float Angle, float B);
+	float FindHyp(float Angle, float B);
+	float FindOpp(float Angle, float B);
+	float FindAdj(float Angle, float B);
 
 
 }
