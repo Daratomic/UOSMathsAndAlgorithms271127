@@ -53,6 +53,7 @@ float MathUtils::FindTanTheta(float A, float B)
 float MathUtils::FindHyp(float Angle, float B)
 {
     float hyp = B / sin(Angle);
+    float t = toDeg(hyp);
     
     return hyp;
 }
@@ -60,6 +61,7 @@ float MathUtils::FindHyp(float Angle, float B)
 float MathUtils::FindOpp(float Angle, float B)
 {
     float opp = B * sin(Angle);
+    float t = toDeg(opp);
     
     return opp;
 }
@@ -67,6 +69,7 @@ float MathUtils::FindOpp(float Angle, float B)
 float MathUtils::FindAdj(float Angle, float B)
 {
     float adj = B / tan(Angle);
+    float t = toDeg(adj);
     
     return adj;
 }

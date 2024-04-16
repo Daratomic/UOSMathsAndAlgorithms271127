@@ -1,2 +1,4 @@
-﻿  Tests.cpp
-  Tests.vcxproj -> C:\Users\Administrator\OneDrive - University of Suffolk\Documents\GitHub\UOSMathsAndAlgorithms271127\x64\Debug\Tests.dll
+﻿  pch.cpp
+  Tests.cpp
+  LINK : G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\x64\Debug\Tests.dll not found or not built by the last incremental link; performing full link
+  Tests.vcxproj -> G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\x64\Debug\Tests.dll
