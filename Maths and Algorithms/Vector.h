@@ -4,7 +4,6 @@ class Vector
 public:
 	float Magnitude();
 
-
 	void Normalise();
 
 	void Scale(float Scaler);
