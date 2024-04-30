@@ -9,6 +9,8 @@ public:
 
 	float Data[3][3] ;
 
+	float a, b, c, d;
+
 	float Determinate();
 
 	void RotateAroundX(float Angle);
