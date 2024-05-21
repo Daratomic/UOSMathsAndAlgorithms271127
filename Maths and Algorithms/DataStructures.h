@@ -9,6 +9,13 @@ class Stack
 public:
     T* Data;
     size_t Size;
+    int count = 0;
+
+    Stack(size_t size)
+    {
+        Size = size;
+        Data = new T[Size];
+    }
 
     T Pop();
     T Peek();
@@ -53,3 +60,22 @@ public:
     void HeapifyDown(); //Bubble Down;
 };
 
+template<typename T>
+inline T Stack<T>::Pop()
+{    
+    count--;
+    return T();
+}
+
+template<typename T>
+inline T Stack<T>::Peek()
+{
+    return Data[count - 1];
+}
+
+template<typename T>
+inline void Stack<T>::Push(T dataToPush)
+{
+    Data[count] = dataToPush; 
+    count++;
+}
