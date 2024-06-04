@@ -33,3 +33,28 @@ int* Algorithms::HeapSort(int* Data, size_t Size)
 {
     return nullptr;
 }
+
+int* Algorithms::MergeSort(int* Data, size_t Size)
+{
+    return nullptr;
+}
+
+int* Algorithms::QuickSort(int* Data, size_t Size)
+{
+    return nullptr;
+}
+
+int* Algorithms::BinSort(int* Data, size_t Size)
+{
+    return nullptr;
+}
+
+int* Algorithms::LinierSearch(int* Data, size_t Size, int target)
+{
+    return nullptr;
+}
+
+int* Algorithms::BinarySearch(int* Data, size_t Size, int target)
+{
+    return nullptr;
+}
