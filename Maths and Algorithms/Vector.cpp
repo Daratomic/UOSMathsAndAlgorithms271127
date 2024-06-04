@@ -54,7 +54,16 @@ float Vector::Dot(Vector& B)
 	return cosf(costheta);
 }
 
-Vector Vector::Cross(Vector& B)
+Vector Vector::Cross(Vector& B, Vector& A)
 {
-	return Vector();
+	float cx = A.y * B.z - A.z * B.y;
+	float cy = A.z * B.x - A.x * B.z;
+	float cz = A.x * B.y - A.y * B.x;
+
+	Vector product;
+	product.x = cx;
+	product.y = cy;
+	product.z = cz;
+	
+	return product;
 }

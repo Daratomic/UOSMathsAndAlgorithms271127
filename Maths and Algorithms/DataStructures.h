@@ -79,3 +79,23 @@ inline void Stack<T>::Push(T dataToPush)
     Data[count] = dataToPush; 
     count++;
 }
+
+template<typename T>
+inline T Queue<T>::Pop()
+{
+    T firstIndex = Data[0];
+    Data[0] = null;
+}
+
+template<typename T>
+inline T Queue<T>::Peek()
+{
+    return Data[0];
+}
+
+template<typename T>
+inline void Queue<T>::Push(T dataToPush)
+{
+    Data[Index] = dataToPush;
+    index++;
+}
