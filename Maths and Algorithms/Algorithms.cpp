@@ -2,24 +2,26 @@
 
 int* Algorithms::BubbleSort(int* Data, size_t Size)
 {
-    for (int step = 0; step < Size - 1; step++)
-    {
-        int swap = 0;
 
-        for(int i = 0; i < Size - 1; i++)
+        for(int i = 0; i < Size; i++)
         {
-            int oldi = i;
-            i = Data[i + 1];
-            Data[i + 1] = oldi;
+            for (int j = 0; j < Size; j++)
+            {
+                if (Data[j] > Data[j + 1])
+                {
+                    int temp1 = Data[j];
+                    int temp2 = Data[j + 1];
 
-            swap = 1;
-        }
-    }
+                    Data[j] = temp2;
+                    Data[j + 1] = temp1;
+                }
+            }
+        }    
     
-    return Data;
+        return Data;
 }
 
-int* Algorithms::InsesrtionSort(int* Data, size_t Size)
+int* Algorithms::InsertionSort(int* Data, size_t Size)
 {
     return nullptr;
 }
