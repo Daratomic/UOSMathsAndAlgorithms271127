@@ -11,10 +11,18 @@ public:
     size_t Size;
     int count = 0;
 
-    Stack(size_t size)
+    Stack()
     {
-        Size = size;
-        Data = new T[Size];
+        Size = 0;
+        Data = nullptr;
+    }
+
+    ~Stack()
+    {
+        if (Data != nullptr)
+        {
+           delete[] Data;
+        }
     }
 
     T Pop();
@@ -63,20 +71,42 @@ public:
 template<typename T>
 inline T Stack<T>::Pop()
 {    
+    if (count == 0) throw std::out_of_range("Pop");
     count--;
-    return T();
+    return Data[count];
 }
 
 template<typename T>
 inline T Stack<T>::Peek()
 {
+    if (count == 0) throw std::out_of_range("Peek");
     return Data[count - 1];
 }
 
 template<typename T>
 inline void Stack<T>::Push(T dataToPush)
 {
-    Data[count] = dataToPush; 
+    // No array allocated yet
+    if (Data == nullptr)
+    {
+        Data = new T[4];
+        Size = 4;
+    }
+
+    // Array already full
+    if (Size == count)
+    {
+        T* newData = new T[Size * 2];
+        for (int = 0; i < Size; ++i)
+        {
+            newData[i] = Data[i];
+        }
+        delete[] Data;
+        Data = newData;
+        Size = 2 * Size;
+    }
+
+    Data[count] = dataToPush;
     count++;
 }
 
