@@ -1,13 +1,4 @@
-﻿  Algorithms.cpp
-  DataStructures.cpp
+﻿  DataStructures.cpp
   Maths and Algorithms.cpp
-  Maths.cpp
-  Matrix.cpp
-  Vector.cpp
   Generating Code...
-G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(24,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(55,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(63,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\Maths and Algorithms\Maths.cpp(71,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  LINK : G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\x64\Debug\Maths and Algorithms.exe not found or not built by the last incremental link; performing full link
   Maths and Algorithms.vcxproj -> G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\x64\Debug\Maths and Algorithms.exe

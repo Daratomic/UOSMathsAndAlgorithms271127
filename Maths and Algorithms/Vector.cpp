@@ -37,13 +37,13 @@ float Vector::Dot(Vector& B)
 	return dot;
 }
 
-Vector Vector::Cross(Vector& A, Vector& B)
+Vector Vector::Cross(Vector& B)
 {
 	Vector product;
 	
-	product.x = A.y * B.z - A.z * B.y;
-	product.y = A.z * B.x - A.x * B.z;
-	product.z = A.x * B.y - A.y * B.x;
+	product.x = y * B.z - z * B.y;
+	product.y = z * B.x - x * B.z;
+	product.z = x * B.y - y * B.x;
 	
 	return product;
 }
