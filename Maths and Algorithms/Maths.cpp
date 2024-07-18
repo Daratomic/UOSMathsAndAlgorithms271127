@@ -2,74 +2,60 @@
 #include <math.h>
 
 
-#define PI 3.14f
-#define HalfCircle 180
+constexpr float PI = 3.14f;
+constexpr float HalfCircle = 180.0f;
+
 float MathUtils::toRad(float Deg)
 {
-    float radian = Deg * PI / HalfCircle;
-
-    return radian;
+    return Deg * PI / HalfCircle;
 }
 
 float MathUtils::toDeg(float Rad)
 {
-    float degrees = Rad * HalfCircle / PI;
-    
-    return degrees;
+    return Rad * HalfCircle / PI;
 }
 
 float MathUtils::Pythagoras(float A, float B)
 {
-    float c = (A * A) + (B * B);
-    float h = sqrt(c);
-
-    return h;
+    float cSquared = A * A + B * B;
+    return sqrtf(cSquared);
 }
 
-float MathUtils::FindSinTheta(float A, float B)
+float MathUtils::FindSinTheta(float opp, float hyp)
 {
-    float Theata = A / B;
-    float SOH = asinf(Theata);
-    float t = toDeg(SOH);
-    return SOH;
+    float sinVal = opp / hyp;
+    float theta = asinf(sinVal); // SOH
+    return theta;
 }
 
-float MathUtils::FindCosTheta(float A, float B)
+float MathUtils::FindCosTheta(float adj, float hyp)
 {
-    float Theata = A / B;
-    float CAH = acosf(Theata);
-    float t = toDeg(CAH);
-    return CAH;
+    float cosVal = adj / hyp;
+    float theta = acosf(cosVal); // CAH
+    return theta;
 }
 
-float MathUtils::FindTanTheta(float A, float B)
+float MathUtils::FindTanTheta(float opp, float adj)
 {
-    float Theata = A / B;
-    float TOA = atanf(Theata);
-    float t = toDeg(TOA);
-    return t;
+    float tanVal = opp / adj;
+    float theta = atanf(tanVal); // TOA
+    return theta;
 }
 
-float MathUtils::FindHyp(float Angle, float B)
+float MathUtils::FindHyp(float Angle, float opp)
 {
-    float hyp = B / sin(Angle);
-    float t = toDeg(hyp);
-    
+    float hyp = opp / sinf(Angle);
     return hyp;
 }
 
-float MathUtils::FindOpp(float Angle, float B)
+float MathUtils::FindOpp(float Angle, float hyp)
 {
-    float opp = B * sin(Angle);
-    float t = toDeg(opp);
-    
+    float opp = hyp * sinf(Angle);   
     return opp;
 }
 
-float MathUtils::FindAdj(float Angle, float B)
+float MathUtils::FindAdj(float Angle, float opp)
 {
-    float adj = B / tan(Angle);
-    float t = toDeg(adj);
-    
+    float adj = opp / tanf(Angle);
     return adj;
 }

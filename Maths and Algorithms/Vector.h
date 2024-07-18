@@ -10,7 +10,7 @@ public:
 	void Scale(float Scaler);
 
 	float Dot(Vector& B);
-	Vector Cross(Vector& B, Vector& A);
+	Vector Cross(Vector& A, Vector& B);
 
 };
 

@@ -3,24 +3,17 @@
 
 float Vector::Magnitude()
 {
-	float mag;
-
-	mag = sqrt(x * x + y * y + z * z);
+	float magSqr = x * x + y * y + z * z;
 	
-	return mag;
+	return sqrt(magSqr);
 }
 
 void Vector::Normalise()
-{
-	float mag;
-	float normx;
-	float normy;
-	float normz;
-	
-	mag = Magnitude();
-	normx = x / mag;
-	normy = y / mag;
-	normz = z / mag;
+{	
+	float mag = Magnitude();
+	float normx = x / mag;
+	float normy = y / mag;
+	float normz = z / mag;
 
 	x = normx;
 	y = normy;
@@ -40,30 +33,17 @@ void Vector::Scale(float Scaler)
 
 float Vector::Dot(Vector& B)
 {
-	float newX = x * B.x;
-	float newY = y * B.y;
-	float newZ = z * B.z;
-
-	float topline = newX + newY + newZ;
-
-	float magA = Magnitude();
-	float magB = B.Magnitude();
-
-	float costheta = topline / (magA * magB);
-	
-	return cosf(costheta);
+	float dot = x * B.x + y * B.y + z * B.z;
+	return dot;
 }
 
-Vector Vector::Cross(Vector& B, Vector& A)
+Vector Vector::Cross(Vector& A, Vector& B)
 {
-	float cx = A.y * B.z - A.z * B.y;
-	float cy = A.z * B.x - A.x * B.z;
-	float cz = A.x * B.y - A.y * B.x;
-
 	Vector product;
-	product.x = cx;
-	product.y = cy;
-	product.z = cz;
+	
+	product.x = A.y * B.z - A.z * B.y;
+	product.y = A.z * B.x - A.x * B.z;
+	product.z = A.x * B.y - A.y * B.x;
 	
 	return product;
 }
