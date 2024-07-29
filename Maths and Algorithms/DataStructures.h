@@ -173,7 +173,6 @@ inline void MinimumBinaryHeap<T>::Add(T DataToAdd)
 {
     if (Root == nullptr)
     {
-        Root = new Node<T>(DataToAdd);
         return;
     }
 
