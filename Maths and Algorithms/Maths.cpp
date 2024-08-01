@@ -24,7 +24,7 @@ float MathUtils::Pythagoras(float A, float B)
 float MathUtils::FindSinTheta(float opp, float adj)
 {
     float hyp = Pythagoras(opp, adj);
-    return adj / hyp;
+    return opp / hyp;
 }
 
 float MathUtils::FindCosTheta(float opp, float adj)

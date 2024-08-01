@@ -28,7 +28,7 @@ int* Algorithms::InsesrtionSort(int* Data, size_t Size)
         while (j >= 0 && Data[j] > Data[i])
         {
             Data[j + 1] = Data[j];
-            j = j - 1;
+            j -= 1;
         }
 
         Data[j + 1] = Data[i];
