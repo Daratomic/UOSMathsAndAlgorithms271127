@@ -1,2 +1,3 @@
-﻿  Maths.cpp
+﻿  Vector.cpp
+G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\Maths and Algorithms\Vector.cpp(8,13): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
   Maths and Algorithms.vcxproj -> G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\x64\Debug\Maths and Algorithms.exe

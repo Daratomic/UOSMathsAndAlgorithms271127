@@ -24,7 +24,7 @@ void Vector::Scale(float Scaler)
 {
 	float scaleX = x * Scaler;
 	float scaleY = y * Scaler;
-	float scaleZ = y * Scaler;
+	float scaleZ = z * Scaler;
 
 	x = scaleX;
 	y = scaleY;

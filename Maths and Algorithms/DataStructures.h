@@ -219,3 +219,9 @@ inline void MinimumBinaryHeap<T>::HeapifyUp()
 {
     
 }
+
+template<typename T>
+inline void MinimumBinaryHeap<T>::HeapifyDown()
+{
+
+}

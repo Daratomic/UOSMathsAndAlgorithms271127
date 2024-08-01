@@ -1,2 +1,4 @@
 ﻿  Tests.cpp
+G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\Maths and Algorithms\Algorithms.cpp(95,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\Maths and Algorithms\Algorithms.cpp(96,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   Tests.vcxproj -> G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\x64\Debug\Tests.dll

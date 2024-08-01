@@ -5,8 +5,10 @@
 #include "../Maths and Algorithms/Maths.h"
 #include "../Maths and Algorithms/Matrix.h"
 #include "../Maths and Algorithms/Vector.h"
-
 #include "../Maths and Algorithms/Maths.cpp"
+#include "../Maths and Algorithms/Algorithms.cpp"
+#include "../Maths and Algorithms/Matrix.cpp"
+#include "../Maths and Algorithms/Vector.cpp"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace Tests
@@ -148,163 +150,163 @@ namespace Tests
 	};
 
 
-	// TEST_CLASS(DataStructures)
-	// {
-	// public:
-	//
-	// 	TEST_METHOD(BubbleSortTest)
-	// 	{
-	// 		// Arrange
-	// 		int testData[] = { 5, 3, 7, 1, 9 };
-	// 		size_t size = sizeof(testData) / sizeof(testData[0]);
-	//
-	// 		// Act
-	// 		int* sortedData = ::Algorithms::BubbleSort(testData, size);
-	//
-	// 		// Assert
-	// 		Assert::AreEqual(1, sortedData[0], L"BubbleSort did not sort the array correctly");
-	// 		Assert::AreEqual(9, sortedData[size - 1], L"BubbleSort did not sort the array correctly");
-	//
-	// 		// Clean up
-	// 		delete[] sortedData;
-	// 	}
-	//
-	// 	// Similar tests for other sorting functions: InsertionSort, SelectionSort, HeapSort, MergeSort, QuickSort, BinSort
-	//
-	// 	TEST_METHOD(LinearSearchTest)
-	// 	{
-	// 		// Arrange
-	// 		int testData[] = { 5, 3, 7, 1, 9 };
-	// 		size_t size = sizeof(testData) / sizeof(testData[0]);
-	// 		int target = 5;
-	// 		// Act
-	// 		int* result = ::Algorithms::LinierSearch(testData, size, target);
-	//
-	// 		// Assert
-	// 		// Write assertions to verify the result
-	//
-	// 		// Clean up
-	// 		delete[] result;
-	// 	}
-	//
-	// 	TEST_METHOD(BinarySearchTest)
-	// 	{
-	// 		// Arrange
-	// 		int testData[] = { 1, 3, 5, 7, 9 };
-	// 		size_t size = sizeof(testData) / sizeof(testData[0]);
-	// 		int target = 5;
-	//
-	// 		// Act
-	// 		int* result = ::Algorithms::BinarySearch(testData, size, target);
-	//
-	// 		// Assert
-	// 		// Write assertions to verify the result
-	//
-	// 		// Clean up
-	// 		delete[] result;
-	// 	}
-	// 	TEST_METHOD(InsertionSortTest)
-	// 	{
-	// 		// Arrange
-	// 		int testData[] = { 5, 3, 7, 1, 9 };
-	// 		size_t size = sizeof(testData) / sizeof(testData[0]);
-	//
-	// 		// Act
-	// 		int* sortedData = ::Algorithms::InsesrtionSort(testData, size);
-	//
-	// 		// Assert
-	// 		Assert::AreEqual(1, sortedData[0], L"InsertionSort did not sort the array correctly");
-	// 		Assert::AreEqual(9, sortedData[size - 1], L"InsertionSort did not sort the array correctly");
-	//
-	// 		// Clean up
-	// 		delete[] sortedData;
-	// 	}
-	//
-	// 	TEST_METHOD(SelectionSortTest)
-	// 	{
-	// 		// Arrange
-	// 		int testData[] = { 5, 3, 7, 1, 9 };
-	// 		size_t size = sizeof(testData) / sizeof(testData[0]);
-	//
-	// 		// Act
-	// 		int* sortedData = ::Algorithms::SelectionSort(testData, size);
-	//
-	// 		// Assert
-	// 		Assert::AreEqual(1, sortedData[0], L"SelectionSort did not sort the array correctly");
-	// 		Assert::AreEqual(9, sortedData[size - 1], L"SelectionSort did not sort the array correctly");
-	//
-	// 		// Clean up
-	// 		delete[] sortedData;
-	// 	}
-	//
-	// 	TEST_METHOD(HeapSortTest)
-	// 	{
-	// 		// Arrange
-	// 		int testData[] = { 5, 3, 7, 1, 9 };
-	// 		size_t size = sizeof(testData) / sizeof(testData[0]);
-	//
-	// 		// Act
-	// 		int* sortedData = ::Algorithms::HeapSort(testData, size);
-	//
-	// 		// Assert
-	// 		Assert::AreEqual(1, sortedData[0], L"HeapSort did not sort the array correctly");
-	// 		Assert::AreEqual(9, sortedData[size - 1], L"HeapSort did not sort the array correctly");
-	//
-	// 		// Clean up
-	// 		delete[] sortedData;
-	// 	}
-	//
-	// 	TEST_METHOD(MergeSortTest)
-	// 	{
-	// 		// Arrange
-	// 		int testData[] = { 5, 3, 7, 1, 9 };
-	// 		size_t size = sizeof(testData) / sizeof(testData[0]);
-	//
-	// 		// Act
-	// 		int* sortedData = ::Algorithms::MergeSort(testData, size);
-	//
-	// 		// Assert
-	// 		Assert::AreEqual(1, sortedData[0], L"MergeSort did not sort the array correctly");
-	// 		Assert::AreEqual(9, sortedData[size - 1], L"MergeSort did not sort the array correctly");
-	//
-	// 		// Clean up
-	// 		delete[] sortedData;
-	// 	}
-	//
-	// 	TEST_METHOD(QuickSortTest)
-	// 	{
-	// 		// Arrange
-	// 		int testData[] = { 5, 3, 7, 1, 9 };
-	// 		size_t size = sizeof(testData) / sizeof(testData[0]);
-	//
-	// 		// Act
-	// 		int* sortedData = ::Algorithms::QuickSort(testData, size);
-	//
-	// 		// Assert
-	// 		Assert::AreEqual(1, sortedData[0], L"QuickSort did not sort the array correctly");
-	// 		Assert::AreEqual(9, sortedData[size - 1], L"QuickSort did not sort the array correctly");
-	//
-	// 		// Clean up
-	// 		delete[] sortedData;
-	// 	}
-	//
-	// 	TEST_METHOD(BinSortTest)
-	// 	{
-	// 		// Arrange
-	// 		int testData[] = { 5, 3, 7, 1, 9 };
-	// 		size_t size = sizeof(testData) / sizeof(testData[0]);
-	//
-	// 		// Act
-	// 		int* sortedData = ::Algorithms::BinSort(testData, size);
-	//
-	// 		// Assert
-	// 		Assert::AreEqual(1, sortedData[0], L"BinSort did not sort the array correctly");
-	// 		Assert::AreEqual(9, sortedData[size - 1], L"BinSort did not sort the array correctly");
-	//
-	// 		// Clean up
-	// 		delete[] sortedData;
-	// 	}
-	// };
+	 TEST_CLASS(DataStructures)
+	 {
+	 public:
+	
+	 	TEST_METHOD(BubbleSortTest)
+	 	{
+	 		// Arrange
+	 		int testData[] = { 5, 3, 7, 1, 9 };
+	 		size_t size = sizeof(testData) / sizeof(testData[0]);
+	
+	 		// Act
+	 		int* sortedData = ::Algorithms::BubbleSort(testData, size);
+	
+	 		// Assert
+	 		Assert::AreEqual(1, sortedData[0], L"BubbleSort did not sort the array correctly");
+	 		Assert::AreEqual(9, sortedData[size - 1], L"BubbleSort did not sort the array correctly");
+	
+	 		// Clean up
+	 		delete[] sortedData;
+	 	}
+	
+	 	// Similar tests for other sorting functions: InsertionSort, SelectionSort, HeapSort, MergeSort, QuickSort, BinSort
+	
+	 	TEST_METHOD(LinearSearchTest)
+	 	{
+	 		// Arrange
+	 		int testData[] = { 5, 3, 7, 1, 9 };
+	 		size_t size = sizeof(testData) / sizeof(testData[0]);
+	 		int target = 5;
+	 		// Act
+	 		int* result = ::Algorithms::LinierSearch(testData, size, target);
+	
+	 		// Assert
+	 		// Write assertions to verify the result
+	
+	 		// Clean up
+	 		delete[] result;
+	 	}
+	
+	 	TEST_METHOD(BinarySearchTest)
+	 	{
+	 		// Arrange
+	 		int testData[] = { 1, 3, 5, 7, 9 };
+	 		size_t size = sizeof(testData) / sizeof(testData[0]);
+	 		int target = 5;
+	
+	 		// Act
+	 		int* result = ::Algorithms::BinarySearch(testData, size, target);
+	
+	 		// Assert
+	 		// Write assertions to verify the result
+	
+	 		// Clean up
+	 		delete[] result;
+	 	}
+	 	TEST_METHOD(InsertionSortTest)
+	 	{
+	 		// Arrange
+	 		int testData[] = { 5, 3, 7, 1, 9 };
+	 		size_t size = sizeof(testData) / sizeof(testData[0]);
+	
+	 		// Act
+	 		int* sortedData = ::Algorithms::InsesrtionSort(testData, size);
+	
+	 		// Assert
+	 		Assert::AreEqual(1, sortedData[0], L"InsertionSort did not sort the array correctly");
+	 		Assert::AreEqual(9, sortedData[size - 1], L"InsertionSort did not sort the array correctly");
+	
+	 		// Clean up
+	 		delete[] sortedData;
+	 	}
+	
+	 	TEST_METHOD(SelectionSortTest)
+	 	{
+	 		// Arrange
+	 		int testData[] = { 5, 3, 7, 1, 9 };
+	 		size_t size = sizeof(testData) / sizeof(testData[0]);
+	
+	 		// Act
+	 		int* sortedData = ::Algorithms::SelectionSort(testData, size);
+	
+	 		// Assert
+	 		Assert::AreEqual(1, sortedData[0], L"SelectionSort did not sort the array correctly");
+	 		Assert::AreEqual(9, sortedData[size - 1], L"SelectionSort did not sort the array correctly");
+	
+	 		// Clean up
+	 		delete[] sortedData;
+	 	}
+	
+	 	TEST_METHOD(HeapSortTest)
+	 	{
+	 		// Arrange
+	 		int testData[] = { 5, 3, 7, 1, 9 };
+	 		size_t size = sizeof(testData) / sizeof(testData[0]);
+	
+	 		// Act
+	 		int* sortedData = ::Algorithms::HeapSort(testData, size);
+	
+	 		// Assert
+	 		Assert::AreEqual(1, sortedData[0], L"HeapSort did not sort the array correctly");
+	 		Assert::AreEqual(9, sortedData[size - 1], L"HeapSort did not sort the array correctly");
+	
+	 		// Clean up
+	 		delete[] sortedData;
+	 	}
+	
+	 	TEST_METHOD(MergeSortTest)
+	 	{
+	 		// Arrange
+	 		int testData[] = { 5, 3, 7, 1, 9 };
+	 		size_t size = sizeof(testData) / sizeof(testData[0]);
+	
+	 		// Act
+	 		int* sortedData = ::Algorithms::MergeSort(testData, size);
+	
+	 		// Assert
+	 		Assert::AreEqual(1, sortedData[0], L"MergeSort did not sort the array correctly");
+	 		Assert::AreEqual(9, sortedData[size - 1], L"MergeSort did not sort the array correctly");
+	
+	 		// Clean up
+	 		delete[] sortedData;
+	 	}
+	
+	 	TEST_METHOD(QuickSortTest)
+	 	{
+	 		// Arrange
+	 		int testData[] = { 5, 3, 7, 1, 9 };
+	 		size_t size = sizeof(testData) / sizeof(testData[0]);
+	
+	 		// Act
+	 		int* sortedData = ::Algorithms::QuickSort(testData, size);
+	
+	 		// Assert
+	 		Assert::AreEqual(1, sortedData[0], L"QuickSort did not sort the array correctly");
+	 		Assert::AreEqual(9, sortedData[size - 1], L"QuickSort did not sort the array correctly");
+	
+	 		// Clean up
+	 		delete[] sortedData;
+	 	}
+	
+	 	TEST_METHOD(BinSortTest)
+	 	{
+	 		// Arrange
+	 		int testData[] = { 5, 3, 7, 1, 9 };
+	 		size_t size = sizeof(testData) / sizeof(testData[0]);
+	
+	 		// Act
+	 		int* sortedData = ::Algorithms::BinSort(testData, size);
+	
+	 		// Assert
+	 		Assert::AreEqual(1, sortedData[0], L"BinSort did not sort the array correctly");
+	 		Assert::AreEqual(9, sortedData[size - 1], L"BinSort did not sort the array correctly");
+	
+	 		// Clean up
+	 		delete[] sortedData;
+	 	}
+	 };
 	TEST_CLASS(Maths)
 	{
 	public:
@@ -431,82 +433,82 @@ namespace Tests
 		}
 	};
 
-	//TEST_CLASS(Vectors)
-	//{
-	//public:
-	//
-	//	TEST_METHOD(CrossProductTest)
-	//	{
-	//		// Arrange
-	//		Vector vectorA(1.0, 2.0, 3.0);
-	//		Vector vectorB(4.0, 5.0, 6.0);
-	//		Vector expectedCrossProduct(-3.0, 6.0, -3.0);
-	//
-	//		// Act
-	//		Vector crossProduct = vectorA.Cross(vectorB);
-	//
-	//		// Assert
-	//		Assert::AreEqual(expectedCrossProduct.x, crossProduct.x, L"X component is incorrect");
-	//		Assert::AreEqual(expectedCrossProduct.y, crossProduct.y, L"Y component is incorrect");
-	//		Assert::AreEqual(expectedCrossProduct.z, crossProduct.z, L"Z component is incorrect");
-	//	}
-	//	TEST_METHOD(MagnitudeTest)
-	//	{
-	//		// Arrange
-	//		Vector vector(3.0f, 4.0f, 0.0f); // A 3-4-5 right triangle
-	//		float expectedMagnitude = 5.0f;
-	//
-	//		// Act
-	//		float magnitude = vector.Magnitude();
-	//
-	//		// Assert
-	//		Assert::AreEqual(expectedMagnitude, magnitude, 0.0001f, L"Magnitude is incorrect");
-	//	}
-	//	TEST_METHOD(NormaliseTest)
-	//	{
-	//		// Arrange
-	//		Vector vector(3.0f, 4.0f, 0.0f); // A vector with magnitude 5
-	//		Vector expectedNormalizedVector(0.6f, 0.8f, 0.0f); // Normalized vector with magnitude 1
-	//
-	//		// Act
-	//		vector.Normalise();
-	//
-	//		// Assert
-	//		Assert::AreEqual(expectedNormalizedVector.x, vector.x, 0.0001f, L"X component is incorrect");
-	//		Assert::AreEqual(expectedNormalizedVector.y, vector.y, 0.0001f, L"Y component is incorrect");
-	//		Assert::AreEqual(expectedNormalizedVector.z, vector.z, 0.0001f, L"Z component is incorrect");
-	//	}
-	//
-	//	TEST_METHOD(ScaleTest)
-	//	{
-	//		// Arrange
-	//		Vector vector(3.0f, 4.0f, 2.0f); // A vector with initial components
-	//		float scaler = 2.0f; // Scaling factor
-	//		Vector expectedScaledVector(6.0f, 8.0f, 4.0f); // Expected scaled vector
-	//
-	//		// Act
-	//		vector.Scale(scaler);
-	//
-	//		// Assert
-	//		Assert::AreEqual(expectedScaledVector.x, vector.x, 0.0001f, L"X component is incorrect");
-	//		Assert::AreEqual(expectedScaledVector.y, vector.y, 0.0001f, L"Y component is incorrect");
-	//		Assert::AreEqual(expectedScaledVector.z, vector.z, 0.0001f, L"Z component is incorrect");
-	//	}
-	//	TEST_METHOD(DotProductTest)
-	//	{
-	//		// Arrange
-	//		Vector vectorA(1.0f, 2.0f, 3.0f);
-	//		Vector vectorB(4.0f, 5.0f, 6.0f);
-	//		float expectedDotProduct = 32.0f; // Expected dot product of the two vectors
-	//
-	//		// Act
-	//		float dotProduct = vectorA.Dot(vectorB);
-	//
-	//		// Assert
-	//		Assert::AreEqual(expectedDotProduct, dotProduct, 0.0001f, L"Dot product is incorrect");
-	//	}
-	//
-	//};
+	TEST_CLASS(Vectors)
+	{
+	public:
+	
+		TEST_METHOD(CrossProductTest)
+		{
+			// Arrange
+			Vector vectorA(1.0, 2.0, 3.0);
+			Vector vectorB(4.0, 5.0, 6.0);
+			Vector expectedCrossProduct(-3.0, 6.0, -3.0);
+	
+			// Act
+			Vector crossProduct = vectorA.Cross(vectorB);
+	
+			// Assert
+			Assert::AreEqual(expectedCrossProduct.x, crossProduct.x, L"X component is incorrect");
+			Assert::AreEqual(expectedCrossProduct.y, crossProduct.y, L"Y component is incorrect");
+			Assert::AreEqual(expectedCrossProduct.z, crossProduct.z, L"Z component is incorrect");
+		}
+		TEST_METHOD(MagnitudeTest)
+		{
+			// Arrange
+			Vector vector(3.0f, 4.0f, 0.0f); // A 3-4-5 right triangle
+			float expectedMagnitude = 5.0f;
+	
+			// Act
+			float magnitude = vector.Magnitude();
+	
+			// Assert
+			Assert::AreEqual(expectedMagnitude, magnitude, 0.0001f, L"Magnitude is incorrect");
+		}
+		TEST_METHOD(NormaliseTest)
+		{
+			// Arrange
+			Vector vector(3.0f, 4.0f, 0.0f); // A vector with magnitude 5
+			Vector expectedNormalizedVector(0.6f, 0.8f, 0.0f); // Normalized vector with magnitude 1
+	
+			// Act
+			vector.Normalise();
+	
+			// Assert
+			Assert::AreEqual(expectedNormalizedVector.x, vector.x, 0.0001f, L"X component is incorrect");
+			Assert::AreEqual(expectedNormalizedVector.y, vector.y, 0.0001f, L"Y component is incorrect");
+			Assert::AreEqual(expectedNormalizedVector.z, vector.z, 0.0001f, L"Z component is incorrect");
+		}
+	
+		TEST_METHOD(ScaleTest)
+		{
+			// Arrange
+			Vector vector(3.0f, 4.0f, 2.0f); // A vector with initial components
+			float scaler = 2.0f; // Scaling factor
+			Vector expectedScaledVector(6.0f, 8.0f, 4.0f); // Expected scaled vector
+	
+			// Act
+			vector.Scale(scaler);
+	
+			// Assert
+			Assert::AreEqual(expectedScaledVector.x, vector.x, 0.0001f, L"X component is incorrect");
+			Assert::AreEqual(expectedScaledVector.y, vector.y, 0.0001f, L"Y component is incorrect");
+			Assert::AreEqual(expectedScaledVector.z, vector.z, 0.0001f, L"Z component is incorrect");
+		}
+		TEST_METHOD(DotProductTest)
+		{
+			// Arrange
+			Vector vectorA(1.0f, 2.0f, 3.0f);
+			Vector vectorB(4.0f, 5.0f, 6.0f);
+			float expectedDotProduct = 32.0f; // Expected dot product of the two vectors
+	
+			// Act
+			float dotProduct = vectorA.Dot(vectorB);
+	
+			// Assert
+			Assert::AreEqual(expectedDotProduct, dotProduct, 0.0001f, L"Dot product is incorrect");
+		}
+	
+	};
 	//TEST_CLASS(Matrices)
 	//{
 	//public:
