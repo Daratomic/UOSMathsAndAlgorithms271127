@@ -1,4 +1,9 @@
 ﻿  Tests.cpp
-G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\Maths and Algorithms\Algorithms.cpp(95,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\Maths and Algorithms\Algorithms.cpp(96,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\Maths and Algorithms\Algorithms.cpp(142,19): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\Maths and Algorithms\Algorithms.cpp(149,27): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\Maths and Algorithms\Algorithms.cpp(168,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\Maths and Algorithms\Algorithms.cpp(169,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\Maths and Algorithms\Algorithms.cpp(257,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\Maths and Algorithms\Algorithms.cpp(257,43): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\Maths and Algorithms\Algorithms.cpp(295,1): warning C4715: 'Algorithms::LinierSearch': not all control paths return a value
   Tests.vcxproj -> G:\Uni\Maths and Algorithms\UOSMathsAndAlgorithms271127\x64\Debug\Tests.dll
