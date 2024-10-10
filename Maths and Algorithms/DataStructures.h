@@ -1,7 +1,7 @@
 #pragma once
 #include <ctype.h>
 #include <stdexcept>
-
+#include <iostream>
 
 template <typename T>
 struct LinkedNode
@@ -19,10 +19,13 @@ public:
 
     Stack()
     {
+        std::cout << "Stack Constructed\n";
     }
 
     ~Stack()
     {
+        std::cout << "Stack deconstructed\n";
+
         // while pointing to any node, delete it and move on to the next node
         while (Data != nullptr)
         {
